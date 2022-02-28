@@ -1,10 +1,13 @@
 package com.example.menuapp;
 
+
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -39,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 showMyDialogue();
                 break;
             case R.id.mnuView:
-                Toast.makeText(this, "View Item", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "View Item", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
                 break;
             case R.id.mnuLocation:
                 Toast.makeText(this, "Set location", Toast.LENGTH_SHORT).show();
@@ -82,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDataForm() {
+        AlertDialog dialog;
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         LayoutInflater inflater=getLayoutInflater();
         View view =inflater.inflate(R.layout.dataform,null,false);
@@ -89,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText editEmail=view.findViewById(R.id.editEmail);
         TextInputEditText editPhone=view.findViewById(R.id.editPhone);
         builder.setView(view);
+        dialog=builder.create();
         builder.setTitle("Data entry");
         builder.setMessage("Enter all data as required");
         builder.setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -103,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
             }
         });
-        builder.show();
+        dialog.show();
     }
 
 }
