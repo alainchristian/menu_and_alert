@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MenuApp</string>
+    <string name="view">View</string>
+    <string name="add">Add</string>
+    <string name="location">Location</string>
+    <string name="upload">Upload</string>
+    <string name="names">Names</string>
+    <string name="email">Email</string>
+</resources>

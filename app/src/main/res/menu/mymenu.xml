@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="@string/view"
+    app:showAsAction="ifRoom"
+    android:icon="@drawable/view"
+    android:id="@+id/mnuView"
+    />
+    <item
+        android:title="@string/add"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add"
+        android:id="@+id/mnuAdd"
+        />
+    <item
+        android:title="@string/location"
+        android:id="@+id/mnuLocation"
+        />
+    <item
+        android:title="@string/upload"
+        android:id="@+id/mnuUpload"
+        />
+</menu>
