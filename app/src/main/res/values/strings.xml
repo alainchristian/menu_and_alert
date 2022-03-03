@@ -7,4 +7,8 @@
     <string name="names">Names</string>
     <string name="email">Email</string>
     <string name="iphone">iPhone</string>
+    <string name="banana">Banana</string>
+    <string name="_200">200</string>
+    <string name="descr">THis is where you put you product description so that customers can understant the use of the product</string>
+    <string name="product">Product</string>
 </resources>

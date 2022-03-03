@@ -45,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(this, "View Item", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
                 break;
-            case R.id.mnuLocation:
-                Toast.makeText(this, "Set location", Toast.LENGTH_SHORT).show();
+            case R.id.mnuProduct:
+                startActivity(new Intent(MainActivity.this,CustomRecycler.class));
+
                 break;
             case R.id.mnuUpload:
                 Toast.makeText(this, "Upload item", Toast.LENGTH_SHORT).show();
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         TextInputEditText editEmail=view.findViewById(R.id.editEmail);
         TextInputEditText editPhone=view.findViewById(R.id.editPhone);
         builder.setView(view);
-        dialog=builder.create();
+
         builder.setTitle("Data entry");
         builder.setMessage("Enter all data as required");
         builder.setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
             }
         });
+        dialog=builder.create();
         dialog.show();
     }
 

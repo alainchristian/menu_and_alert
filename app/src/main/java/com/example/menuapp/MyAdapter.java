@@ -38,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tvPhone;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tvPhone=itemView.findViewById(R.id.tvphone);
