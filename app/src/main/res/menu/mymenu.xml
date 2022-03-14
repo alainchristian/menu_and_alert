@@ -18,7 +18,12 @@
         android:id="@+id/mnuProduct"
         />
     <item
-        android:title="@string/upload"
-        android:id="@+id/mnuUpload"
+        android:title="@string/add_student"
+        android:id="@+id/mnuAddStudent"
         />
+    <item
+        android:title="@string/view_student"
+        android:id="@+id/mnuViewStudent"
+        />
+
 </menu>
